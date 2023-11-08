@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="icon" href="icon.png" type="image/x-icon">
+        <style>
+            nav a{
+    color:black;
+    margin: 10px;
+    text-decoration:none;
+}
+body{
+    margin:0px;
+}
+nav{
+    display: flex;
+    flex-flow: row-reverse;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+nav a:hover{
+    color: rgb(26, 24, 44)
+}
+.container{
+    text-align:center;
+    margin-top:250px;
+}
+.google-img{
+    height: 100px;
+    width: 300px;
+}
+.search{
+    width:640px;
+    margin: 0 auto;
+    border:1px solid gray;
+    border-radius: 25px;
+}
+.search-bar{
+    width: 550px;
+    padding-top:20px; 
+    font-size:18px;
+    border:none;
+    padding-top: 15px;
+    margin-bottom:10px;
+}
+.search-icon{
+    position: relative;
+    height: 15px;
+    margin-top:10px;
+    width: 15px;
+    margin-left:-40px; 
+}
+.btn-container{
+    margin-top:2%;
+}
+
+.search-btn{
+    height: 40px;
+    border:none;
+    color: #646464;
+    background: #f2f2f2;
+}
+
+.search-btn:hover{
+    color:rgb(37, 37, 37);
+    border:1px solid lightgray;
+}
+
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <a href="google Image Search.html">Googleimage</a>
+            <a href="Google advanced search.html">Advanced Search</a>
+        </nav>
+        <div class="container">
+        <img src="googlelogo.png" alt="" class="google-img">
+        <form action="https://google.com/search">
+            <div class="search">            
+                <img src="icon.webp" alt="" class="search-icon">
+                <input class="search-bar" type="text" name="q">
+            </div>
+            <div class="btn-container">
+            <input type="submit" class="search-btn" value="Google Search" name="btnK">
+            <input type="submit" class="search-btn" value="I am feeling Lucky" name="btnI">
+            </div>
+        </form>
+        </div>
+        <div>
+            <div style="background-color: rgb(186, 186, 186) ;height: 30px;"></div>
+            <div style="background-color: rgb(186, 186, 186);height: 30px ;"></div>
+        </div>
+    </body>
+</html>

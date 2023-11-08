@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        .container{
+    margin : 0 40px;
+}
+body{
+    color:rgb(39, 38, 38)
+}
+h4{
+    color: red;
+    font-weight: 200;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+   color: rgb(233, 232, 232,0.3) 
+}
+h5{
+    font-weight: 200;
+}
+.main-header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 200px 700px auto;
+    column-gap: 10px;
+    row-gap:10px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.second-label{
+    font-size:14px;
+    color:gray
+}
+.input{
+    width: 90%;
+}
+.num-inp{
+    width: 41.5%;
+}
+.heading{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+button[type="submit"]{
+    background-color: rgba(28, 28, 223, 0.774);
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    margin-left:49%;
+    margin-top: 2%;
+}
+nav a{
+    color:black;
+    margin: 10px;
+    text-decoration:none;
+}
+body{
+    margin:0px;
+}
+nav{
+    display: flex;
+    flex-flow: row-reverse;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+nav a:hover{
+    color: rgb(26, 24, 44)
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Google Search</a>
+        <a href="google Image Search.html">Google Images</a>
+    </nav>
+    <div class="container">
+        <h4>Advanced Search</h4>
+        <hr>
+        <form action="https://www.google.com/search">
+        <div class="grid">
+            <div class="grid-item main-header">
+                    <h5>Find pages with..</h5>
+            </div>
+            <div class="grid-item main-header-2">
+                <h5 class="second-label">To do this in the search box</h5>
+            </div>
+            <!-- 1 -->
+            <div class="grid-item">
+                <label for="">
+                    all these words:
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" name="as_q" class="input">
+            </div>
+            <div class="grid-item second-label">
+                Type the important words(main-head-topic):ionic bond
+            </div>
+            <!-- 2 -->
+            <div class="grid-item">
+                <label for="">
+                    this exact word or phrase:
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="input" name="as_epq">
+            </div>
+            <div class="grid-item second-label">
+                Put exact words in quotes:
+            </div>
+            <!-- 3 -->
+            <div class="grid-item">
+                <label for="">any of these words:</label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="input" name="as_oq">
+            </div>
+            <div class="grid-item second-label">
+                Type OR between all the words you want: miniature OR standard
+            </div>
+            <!-- 4 -->
+            <div class="grid-item">
+                <label for="">none of these words:</label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="input" name="as_eq">
+            </div>
+            <div class="grid-item second-label">
+                Put a minus sign just before words that you don't want: -similar, -"polar covalent bond"
+            </div>
+            <!-- 5 -->
+            <div class="grid-item">
+                <label for="">
+                    numbers ranging from
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="num-inp" name="as_nlo">
+                <span>to</span>
+                <input type="text" class="num-inp" name="as_nhi">
+            </div>
+            <div class="grid-item second-label">
+                Put two full stops between the numbers and add a unit of measurement:(ex:) 16.05 g/mol , £200..£500, 2020..2021
+            </div>
+            <div class="grid-item heading">
+                Then narrow your results by..
+            </div>
+            <div class="grid-item">
+                <label for="">
+                    language:
+                </label>
+            </div>
+            <div class="grid-item">
+                <select name="lr" id="" class="input">
+                    <option value="">any language</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_hi">Arabic</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages in the language that you select.
+            </div>
+            <div class="grid-item">
+                Country
+            </div>
+            <div class="grid-item">
+                <select name="cr" id="" class="input">
+                    <option value="countryUK">U.K</option>
+                    <option value="countryARE">A.R.E</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages published in a particular Country.
+            </div>
+            <!-- Last Update -->
+            <div class="grid-item">
+                last update:
+            </div>
+            <div class="grid-item">
+                <select name="as_qdr" id="" class="input">
+                    <option value="all">anytime</option>
+                    <option value="d">last 24 hours</option>
+                    <option value="w">upto a week ago</option>
+                    <option value="m">upto a month ago</option>
+                    <option value="y">upto a year ago</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages updated within the time that you specify.
+            </div>
+            <!-- site or domain -->
+            <div class="grid-item">
+                <label for="">
+                    site or domain:
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="input" name="as_sitesearch">
+            </div>
+            <div class="grid-item second-label">
+                Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
+            </div>
+            <!-- terms appearing -->
+            <div class="grid-item">
+                <label for="">
+                    Terms Appearing
+                </label>
+            </div>
+            <div class="grid-item">
+                <select name="as_occt" id="" class="input">
+                    <option value="">anywhere in the page</option>
+                    <option value="title">title of the page</option>
+                    <option value="body">in the body of the page</option>
+                    <option value="url">in the url of the page</option>
+                    <option value="link">in the links to page</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Search for terms in the whole page, page title or web address, or links to the page you're looking for
+            </div>
+            <!-- safeSearch -->
+            <div class="grid-item">
+                <label for="">SafeSearch</label>
+            </div>
+            <div class="grid-item">
+                <select name="safe" id="">
+                    <option value="images">Show most relevant results</option>
+                    <option value="active">Filter explicit results</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Tell SafeSearch whether to filter sexually explicit content.
+            </div>
+            <div class="grid-item">
+                file type:
+            </div>
+            <div class="grid-item">
+                <select name="as_filetype" id="" class="input">
+                    <option value="">any format</option>
+                    <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                    <option value="kmz">Google Earth KMZ (.kmz)</option>
+                    <option value="xls">Microsoft excel (.xls)</option>
+                    <option value="ppt">Microsoft PowerPoint(.ppt)</option>
+                    <option value="swf">Shokwave Flash(.swf)</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages in the format that you prefer.
+            </div>
+            <div class="grid-item">
+                usage rights:
+            </div>
+            <div class="grid-item">
+                <select name="tbs" id="" class="input">
+                    <option value="">all</option>
+                    <option value="sur%3Acl">Creative Commons Licences</option>
+                    <option value="sur:ol">Commercial and other Licences</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages that you can use for free.
+            </div>
+        </div>
+        <button type="submit">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>
