@@ -1,0 +1,14 @@
+/* add your CSS here */
+#facts{list-style:none ;font-weight:bold;}
+#interesting-fact{font-style:italic;}
+#name{    border: 3px solid teal;    margin: 5px;padding:1px;
+
+}
+#image{    border: 3px solid teal;    margin: 5px;padding:1px;
+
+}
+#card{    border: 3px solid teal;    margin: 5px;padding:1px;
+
+}
+#container{border: 3px solid teal;    margin: 5px;padding:1px;}
+/*.animal-info{border: 3px solid teal; margin: 5px;padding:1px;}*/

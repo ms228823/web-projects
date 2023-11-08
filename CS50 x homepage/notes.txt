@@ -1,0 +1,4 @@
+    <footer>
+        &copy; 2023 All rights reserved to Mohammed Sameh
+    </footer>
+    ctrl + ? (in vs code) = Blackbox AI Chat 

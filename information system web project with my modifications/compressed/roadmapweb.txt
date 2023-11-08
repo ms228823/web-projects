@@ -1,0 +1,18 @@
+frontend
+
+html , html5
+css
+js
+bootstrab
+jquery
+react js
+
+
+
+backend
+
+
+php 
+mysql
+laravel
+api(Application Programming Interface)
